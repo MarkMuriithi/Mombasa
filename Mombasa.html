@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Website Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #1A1B41;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #BAFF29;
+  padding: 20px;
+  font-size: 40px;
+  text-decoration: none;
+  color:black;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #1A1B41;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+a{
+  color: black;
+}
+</style>
+</head>
+<body>
+    <header>
+  <h2>Cities</h2>
+</header>
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+</div>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="./webstructure.html">Nairobi</a></li>
+      <li><a href="#">Kisumu</a></li>
+      <li><a href="#">Mombasa</a></li>
+    </ul>
+  </nav>
+    <article>
+    <h1>Nairobi</h1>
+    <p>Mombasa (/mɒmˈbæsə/ mom-BASS-ə, also US: /-ˈbɑːs-/ -⁠BAH-sə) is a coastal city of Kenya along the Indian Ocean. The city is known as the white and blue city in Kenya. It is the country's oldest (circa 900 AD) and second-largest city[3] (after the capital Nairobi), with a population of about 1,208,333 people according to the 2019 census.[1] Its metropolitan region is the second-largest in the country, and has a population of 3,528,940 people.[1]<br>
+<br>
+Mombasa is a tourism-based city; it has an extra-large port and an international airport, and is an important regional tourism center. Located on the east coast of Kenya, it also is the home of one of the state houses, and is considered by some as a second capital in all but name.<br>
+<br> In 2018 the local government released an edict in which the city was painted white with blue accents and the old town was painted yellow. In Mombasa County and the former Coast Province, Mombasa's situation on the Indian Ocean made it a historical trading center,[4] and it has been controlled by many countries because of its strategic location. </p>
+  </article>
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
+</body>
+</html>
